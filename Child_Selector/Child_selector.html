@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet", href="Child_selector.css" />
+    <title>Child selector</title>
+</head>
+<body>
+    <p>
+        Символ > використовують як селектор наступництваю. Це означає що програма шукає тег всередині вказаного тега і
+        виконує задану дію. Усі інші теги програма ігноруватиме. В прикладі показано як програма знаходить p всередині div з
+        id red і змінює задній фон на червоний.
+    </p>
+    <dt>#red > p{</dt>
+        <dd>background-color:red;</dd>
+    <dt>}</dt>
+    
+    <div id="gray">
+        <p>&lt;p&gt;Hello world&lt;p&gt;</p>
+        <p>&lt;div&gt;</p>
+        <dl>
+            <dd>&lt;p&gt;Hello world&lt;p&gt;</dd>
+        </dl>
+        <p>&lt;/div&gt;</p>
+        <p>&lt;span&gt;dlrow olleH&lt;/span&gt;</p>
+    </div>
+
+    <p style="color: blue;">Вивід</p>
+
+    <p>Hello world</p>
+    <div id="red">
+        <p>Hello world</p>
+    </div>
+    <span>dlrow olleH</span>
+</body>
+</html>

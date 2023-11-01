@@ -1,0 +1,6 @@
+#gray{
+    background-color: gray;
+}
+h1 ~ p{
+    background-color:green;
+}

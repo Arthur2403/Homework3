@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet", href="Selector' '.css" />
+    <title>Child selector</title>
+</head>
+<body>
+    <p>
+        Символ ' ' використовують як селектор наступництваю. Але на відміну від + він йому не потрібно точне положення в структурі. Він виконає дію на всі підходящі теги в
+        структурі починаючи від заданої точки. В прикладі ми бачимо що програма змінила фон не лише p що знаходився прямо в #red але і того що знаходився на рівень нище.
+    </p>
+    <dt>#red p{</dt>
+        <dd>background-color:red;</dd>
+    <dt>}</dt>
+    
+    <div id="gray">
+        <p>&lt;p&gt;Hello world&lt;p&gt;</p>
+        <p>&lt;div&gt;</p>
+        <dl>
+            <dd>&lt;p&gt;Hello world&lt;p&gt;</dd>
+            <dd>&lt;div&gt;</dd>
+            <dl>
+                <dd>&lt;p&gt;Hello world again&lt;/p&gt;</dd>
+            </dl>
+            <dd>&lt;/div&gt;</dd>
+        </dl>
+        <p>&lt;/div&gt;</p>
+        <p>&lt;span&gt;dlrow olleH&lt;/span&gt;</p>
+    </div>
+
+    <p style="color: blue;">Вивід</p>
+
+    <p>Hello world</p>
+    <div id="red">
+        <p>Hello world</p>
+        <div>
+            <p>Hello world again</p>
+        </div>
+    </div>
+    <span>dlrow olleH</span>
+</body>
+</html>

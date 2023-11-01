@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet", href="Selector~.css" />
+    <title>Selector+</title>
+</head>
+<body>
+    <p>
+        Знак ~ слугує селектором для вибору наступного підходящого.
+        Навідміну від +, який вибирає лише наступного ~ вибирає всіх хто підходить. В прикладі ми бачим як прогорама обходить div разом із p і не виконує команду
+        через те що p на іншому рівні. Але програма не зупиняється і шукає далі і знаходить 2 p які підходять під умову.
+    </p>
+    <dl>
+    <dt>h1 ~ p{</dt>
+        <dd>background-color:green;</dd>
+    <dt>}</dt>
+    
+    <div id="gray">
+        <p>&lt;h1&gt;Hello world&lt;/h1&gt;</p>
+        <p>&lt;div&gt;</p>
+        <dl>
+            <dd>&lt;p&gt;Hello world&lt;/p&gt;</dd>
+        </dl>
+        <p>&lt;/div&gt;</p>
+        <p>&lt;span&gt;dlrow olleH&lt;/span&gt;</p>
+        <p>&lt;p&gt;Green Hello world&lt;/p&gt;</p>
+        <p>&lt;p&gt;Another green Hello world&lt;/p&gt;</p>
+    </div>
+    <p style="color: blue;">
+        Вивід
+    </p>
+    
+    <h1>Hello world</h1>
+    <div>
+        <p>Hello world</p>
+    </div>
+    <span>dlrow olleH</span>
+    <p>Green Hello world</p>
+    <p>Another green Hello world</p>
+</body>
+</html>
